@@ -43,7 +43,7 @@ className="
     cursor-pointer hover:cursor-grab
     z-10
   "        >
-          Let's Start Your Project Together
+          Let&apos;s Start Your Project Together
         </Link>
       </div>
 

@@ -1,6 +1,7 @@
 import avatar1 from "@/assets/lezprofilepic.png";
 import avatar2 from "@/assets/byakkoprofilepic.png";
 import avatar3 from "@/assets/girlprofilepic.png";
+import Image from "next/image";
 
 
 
@@ -42,7 +43,7 @@ const Testimonials = () => {
               key={index}
               className="flex flex-col items-center text-center p-8 bg-black/50 rounded-xl border border-gray-800 hover:border-gray-600 transition-all max-w-md mx-auto"
             >
-              <img
+              <Image
                 src={testimonial.avatar.src}
                 alt={testimonial.name}
                 className="w-16 h-16 rounded-full object-cover mb-4"
