@@ -20,7 +20,6 @@ export const metadata: Metadata = {
     shortcut: "/icono.ico", // Para navegadores que usan 'shortcut icon'
     apple: "/apple-touch-icon.png", // Opcional: ícono para iOS (180x180 px recomendado)
   },
-  themeColor: "#000000", // Cambia el color de la barra del navegador en móviles
 };
 
 export default function RootLayout({

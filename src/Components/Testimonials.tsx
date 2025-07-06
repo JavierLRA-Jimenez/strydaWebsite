@@ -46,11 +46,13 @@ const Testimonials = () => {
               <Image
                 src={testimonial.avatar.src}
                 alt={testimonial.name}
-                className="w-16 h-16 rounded-full object-cover mb-4"
+                width={64}
+                height={64}
+                className="rounded-full object-cover mb-4"
               />
               <h3 className="font-bold text-gray-300">{testimonial.name}</h3>
               <p className="text-sm text-gray-500 mb-4">{testimonial.role}</p>
-              <p className="text-gray-400 leading-relaxed">"{testimonial.text}"</p>
+              <p className="text-gray-400 leading-relaxed">&quot;{testimonial.text}&quot;</p>
             </div>
           ))}
         </div>

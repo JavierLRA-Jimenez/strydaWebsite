@@ -22,7 +22,7 @@ const Hero = () => {
         </div>
 
         <h1 className="text-5xl md:text-6xl font-bold mb-4 leading-tight">
-          From Zero to a High-Impact Website, Designed to Convert in Just <span className="text-cyan-400">7 days</span>.
+          From Zero to a High-Impact Website, Designed to Convert in Just <span className="text-cyan-400">7 days</span>
         </h1>
 
         <p className="text-lg md:text-lg mb-8 text-neutral-300 max-w-3xl mx-auto">
