@@ -1,19 +1,19 @@
 "use client"
 import React from 'react';
 import Image from 'next/image';
-import SupaBase from "../assets/SupaBase V1.png"
 import SupaBase2 from "../assets/SupaBase V2.png"
 import OctoMails from "../assets/Octomail.png"
 import Pizza from "../assets/Pizza Section.png"
 import Heroku from "../assets/Heroku Design.png"
 import Lez from "../assets/Lez.png"
 import Sushi from "../assets/Sushi.png"
-import MarleyDark from "../assets/Coffe Store Dark.png"
+import Gym from "../assets/Gym.png"
+import Pill from "../assets/PillStore.png"
 
 const projects = [
   { 
-    title: 'ReDesign SupaBase', 
-    image: SupaBase,
+    title: 'Gym Product Website', 
+    image: Gym,
   },
   { 
     title: 'ReDesign SupaBase 2', 
@@ -36,8 +36,8 @@ const projects = [
     image: Lez,
   },
   { 
-    title: 'ReDesign MarleyCoffee', 
-    image: MarleyDark,
+    title: 'Nutrition Pill Store', 
+    image: Pill,
   },
   { 
     title: 'Sushi Business', 
@@ -56,7 +56,7 @@ const Portfolio = () => {
               key={i}
               target="_blank"
               rel="noopener noreferrer"
-              className="relative w-90 min-w-[500px] md:min-w-[600px] h-[500px] bg-neutral-900 rounded-2xl overflow-hidden shadow-xl border border-neutral-800 hover:border-gray-800 transition-all group/item hover:scale-[1.02]"
+              className="relative w-90 min-w-[500px] md:min-w-[1000px] h-[600px] bg-neutral-900 rounded-2xl overflow-hidden shadow-xl border border-neutral-800 hover:border-gray-800 transition-all group/item hover:scale-[1.02]"
             >
               <div className="relative w-full h-full">
                 <Image

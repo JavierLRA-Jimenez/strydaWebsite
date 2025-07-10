@@ -2,6 +2,8 @@
 import React from 'react';
 import Image from 'next/image';
 import SupaBase from "../../assets/SupaBase V1.png"
+import Gym from "../../assets/Gym.png"
+import Pill from "../../assets/PillStore.png"
 import SupaBase2 from "../../assets/SupaBase V2.png"
 import OctoMails from "../../assets/Octomail.png"
 import Lez from "../../assets/Lez.png"
@@ -9,6 +11,7 @@ import MarleyDark from "../../assets/Coffe Store Dark.png"
 import Pizza from "../../assets/Pizza Section.png"
 import Heroku from "../../assets/Heroku Design.png"
 import Sushi from "../../assets/Sushi.png"
+import Navbar from '@/Components/NavBar';
 
 // Agrega tus imágenes en la carpeta public/images
 const projects = [
@@ -16,9 +19,17 @@ const projects = [
     title: 'ReDesign SupaBase', 
     image: SupaBase,
   },
+    { 
+    title: 'Nutrition Pill Store', 
+    image: Pill,
+  },
   { 
     title: 'ReDesign SupaBase 2', 
     image: SupaBase2,
+  },
+    { 
+    title: 'Gym Product Website', 
+    image: Gym,
   },
   { 
     title: 'OctoMails', 
@@ -48,8 +59,10 @@ const projects = [
 
 const Portfolio = () => {
   return (
+    
     <section className="bg-black text-white py-20 overflow-hidden px-6">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 neon-title">
+      <Navbar/>
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 mt-8 neon-title">
         Latest Projects
       </h2>
 
@@ -59,7 +72,7 @@ const Portfolio = () => {
             <a
               key={i}
               target="_blank"
-              className="relative w-80 min-w-[800px] h-[500px] bg-neutral-900 rounded-2xl overflow-hidden shadow-xl border border-neutral-800 hover:border-white transition-all group/item"
+              className="relative w-80 min-w-[1000px] h-[600px] bg-neutral-900 rounded-2xl overflow-hidden shadow-xl border border-neutral-800 hover:border-white transition-all group/item"
             >
               <Image
                 src={project.image}
