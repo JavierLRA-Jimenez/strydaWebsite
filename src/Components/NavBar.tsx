@@ -35,9 +35,8 @@ const Navbar = () => {
         </div>
 
         {/* Right - button */}
-        <Link href="/Booking_Free_Call" className="relative bg-gray-200 hover:bg-white cursor-pointer text-black px-6 py-2.5 rounded-full font-bold">
+        <Link href="/Booking_Free_Call" className="relative bg-gray-200 hover:bg-white cursor-pointer text-black px-10 md:px-6 py-2.5 rounded-full font-bold">
           <span>Book an Intro Call</span>
-          <div className="absolute inset-0 border border-gray-500 rounded-full " />
         </Link>
       </div>
     </nav>

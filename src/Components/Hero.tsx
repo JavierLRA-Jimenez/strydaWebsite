@@ -16,11 +16,11 @@ const Hero = () => {
           </span>
         </div>
 
-        <h1 className="text-5xl md:text-6xl font-bold mb-10 mx-24 ">
+        <h1 className="text-3xl md:text-6xl font-bold mb-10 mx-10 md:mx-24 ">
           High-Impact Web Design for SaaS That Converts, Not Just Looks Good
         </h1>
 
-        <Link href="/Booking_Free_Call" className="relative bg-gray-200 hover:bg-white cursor-pointer text-black px-6 py-2.5 rounded-full font-bold">
+        <Link href="/Booking_Free_Call" className="relative bg-gray-200 hover:bg-white cursor-pointer text-black px-6 md:px-6 py-2.5 rounded-full font-bold">
           <span >Book an Intro Call</span>
         </Link>
       </div>

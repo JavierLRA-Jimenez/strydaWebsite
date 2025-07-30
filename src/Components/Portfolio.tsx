@@ -35,18 +35,22 @@ const Portfolio = () => {
 
   return (
     <section className="bg-black py-20 px-6 flex justify-center">
-      <div className="relative w-[90%] max-w-5xl h-[600px] rounded-2xl overflow-hidden shadow-xl border border-neutral-800">
-        <Image
-          src={project.image}
-          alt={project.title}
-          fill
-          sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-cover object-top transition-opacity duration-500"
-          quality={100}
-          priority
-        />
-      </div>
-    </section>
+  <div
+    className="relative w-full max-w-5xl mx-auto overflow-hidden rounded-2xl shadow-xl border border-neutral-800"
+    style={{ aspectRatio: '16 / 9' }} // Mantiene relación horizontal
+  >
+    <Image
+      src={project.image}
+      alt={project.title}
+      fill
+      sizes="(max-width: 768px) 100vw, 50vw"
+      className="object-cover object-top transition-opacity duration-500"
+      quality={100}
+      priority
+    />
+  </div>
+</section>
+
   );
 };
 
