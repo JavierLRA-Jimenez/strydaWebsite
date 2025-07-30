@@ -1,12 +1,7 @@
 import React from 'react'
 import { Star } from 'lucide-react'
 import Link from 'next/link'
-import { Geist } from "next/font/google";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
 const Hero = () => {
   return (
