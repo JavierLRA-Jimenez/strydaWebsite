@@ -1,6 +1,5 @@
 import Hero from '@/Components/Hero';
 import Portfolio from '@/Components/Portfolio';
-import WhyChooseUs from '@/Components/WhyChooseUs';
 import Pricing from '@/app/Pricing/page';
 import Navbar from '@/Components/NavBar';
 import Preguntas from '@/Components/Preguntas';
@@ -19,9 +18,6 @@ export default function Home() {
 
       {/* Portfolio */}
       <Portfolio/>
-
-      {/* Why Choose Us */}
-      <WhyChooseUs/>
 
       {/* Testimonios */}
       <Testimonials/>

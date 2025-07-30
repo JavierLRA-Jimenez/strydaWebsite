@@ -14,11 +14,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Stryda Design",
-  description: "Rent Your Website or Redesign your Landing page",
+  description: "Modern websites and landing pages built to convert - not just look pretty.",
   icons: {
     icon: "/icono.ico", // Favicon clásico
     shortcut: "/icono.ico", // Para navegadores que usan 'shortcut icon'
-    apple: "/apple-touch-icon.png", // Opcional: ícono para iOS (180x180 px recomendado)
   },
 };
 

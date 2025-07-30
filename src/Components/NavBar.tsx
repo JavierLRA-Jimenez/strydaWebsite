@@ -20,7 +20,7 @@ const Navbar = () => {
             />
           </svg>
           <span className="text-2xl font-bold text-white">
-            Stryda<span className="text-blue-300">.</span>
+            STRYDA.
           </span>
         </Link>
 

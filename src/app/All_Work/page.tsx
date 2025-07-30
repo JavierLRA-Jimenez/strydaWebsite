@@ -12,12 +12,32 @@ import Pizza from "../../assets/Pizza Section.png"
 import Heroku from "../../assets/Heroku Design.png"
 import Sushi from "../../assets/Sushi.png"
 import Navbar from '@/Components/NavBar';
+import Crypto from "../../assets/TWITTER crypto.png"
+import House from "../../assets/Rent House.png"
+import SaaS from "../../assets/Twitter post MOBILE.png"
+import Twitter from "../../assets/TWITTER.png"
 
 // Agrega tus imágenes en la carpeta public/images
 const projects = [
   { 
     title: 'ReDesign SupaBase', 
     image: SupaBase,
+  },
+    { 
+    title: 'Crypto Website', 
+    image: Crypto,
+  },
+    { 
+    title: 'Review SaaS', 
+    image: SaaS,
+  },
+  { 
+    title: 'Mobile Design for SaaS', 
+    image: Twitter,
+  },
+    { 
+    title: 'Rent House Website', 
+    image: House,
   },
     { 
     title: 'Nutrition Pill Store', 
@@ -62,9 +82,7 @@ const Portfolio = () => {
     
     <section className="bg-black text-white py-20 overflow-hidden px-6">
       <Navbar/>
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 mt-8 neon-title">
-        Latest Projects
-      </h2>
+
 
       <div className="relative w-full overflow-hidden group">
         <div className="flex w-max animate-scroll gap-6 group-hover:[animation-play-state:paused]">

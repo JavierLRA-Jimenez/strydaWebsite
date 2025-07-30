@@ -33,12 +33,12 @@ const FAQSection = () => {
           {faqs.map((faq, index) => (
             <div 
               key={index}
-              className="group border border-gray-800 rounded-xl p-6 bg-gray-900/50 hover:bg-gray-900 transition-all 
+              className="group border border-gray-800 rounded-xl p-6 bg-black
                 cursor-pointer neon-glow-faq"
             >
               <div className="flex justify-between items-center">
                 <h3 className="text-xl font-medium text-gray-100">{faq.question}</h3>
-                <div className="text-cyan-400 transform group-hover:rotate-180 transition">
+                <div className="text-white transform group-hover:rotate-180 transition">
                   <svg 
                     className="w-6 h-6" 
                     fill="none" 

@@ -34,14 +34,14 @@ const Testimonials = () => {
         <h2 className="text-4xl font-bold text-white mb-4">
           Hear It Straight
           <br />
-          <span className="text-transparent bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text">from Our Clients</span>
+          <span className="text-gray-50">from Our Clients</span>
         </h2>
 
         <div className="flex flex-col md:flex-row justify-center gap-8 mt-16 items-stretch">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="flex flex-col items-center text-center p-8 bg-black/50 rounded-xl border border-gray-800 hover:border-gray-600 transition-all max-w-md mx-auto"
+              className="flex flex-col items-center text-center p-8 rounded-xl border border-gray-800 hover:border-gray-700 transition-all max-w-md mx-auto"
             >
               <Image
                 src={testimonial.avatar.src}

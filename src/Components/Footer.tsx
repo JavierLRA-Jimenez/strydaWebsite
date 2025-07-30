@@ -1,6 +1,7 @@
 "use client"
-import React from 'react';
-import Link from 'next/link';
+import { FaInstagram, FaTwitter } from "react-icons/fa";
+import Link from "next/link";
+
 
 const Footer: React.FC = () => {
   return (
@@ -12,10 +13,8 @@ const Footer: React.FC = () => {
           <h2 className="text-4xl md:text-6xl font-bold mb-8 bg-white bg-clip-text text-transparent">
             Let&apos;s Build Something
             <br />
-            <span className="text-white">People</span>{' '}
-            <span className="text-transparent bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text">
-              Remember
-            </span>
+            <span className="text-white">People Remember</span>{' '}
+
           </h2>
 
           <div className="flex justify-center gap-6 mt-12 flex-wrap">
@@ -59,17 +58,23 @@ const Footer: React.FC = () => {
             </Link>
           </div>
 
-          <div className="flex gap-6">
-            {['Instagram'].map((platform) => (
-              <Link
-                key={platform}
-                href="https://www.instagram.com/stryda_design/"
-                className="hover:text-purple-400 transition-colors capitalize"
-              >
-                {platform}
-              </Link>
-            ))}
-          </div>
+          <div className="flex gap-6 items-center">
+  <Link
+    href="https://instagram.com/stryda_design/"
+    className="hover:text-white transition-colors"
+    aria-label="Instagram"
+  >
+    <FaInstagram size={25} />
+  </Link>
+  <Link
+    href="https://x.com/Jim_Jvi"
+    className="hover:text-white transition-colors"
+    aria-label="Twitter"
+  >
+    <FaTwitter size={25} />
+  </Link>
+</div>
+
         </div>
       </div>
 

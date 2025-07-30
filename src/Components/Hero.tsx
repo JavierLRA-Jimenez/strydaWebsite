@@ -1,49 +1,32 @@
 import React from 'react'
 import { Star } from 'lucide-react'
 import Link from 'next/link'
+import { Geist } from "next/font/google";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
 
 const Hero = () => {
   return (
-    <section className="relative bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white py-24 px-6 text-center overflow-hidden">
-      {/* Fondo dinámico con efecto de partículas */}
-      <div className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-10 right-20 w-48 h-48 bg-cyan-500/15 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute top-1/3 right-1/4 w-32 h-32 bg-emerald-500/10 rounded-full blur-3xl animate-pulse"></div>
-      </div>
+    <section className="relative bg-black text-gray-50 py-24 px-6 text-center overflow-hidden">
 
       {/* Indicador de disponibilidad pulsante */}
       <div className="relative max-w-5xl mx-auto">
-        <div className="inline-flex items-center bg-green-900/30 border border-green-500/50 rounded-full px-4 py-1 mb-6 animate-pulse">
+        <div className="inline-flex items-center border border-green-500 rounded-full px-4 py-1 mb-6 animate-pulse">
           <div className="w-3 h-3 bg-green-500 rounded-full mr-2 animate-ping"></div>
-          <span className="text-green-400 font-medium text-sm">
-             Only 5 website spots available this month
+          <span className="text-gray-50 font-medium text-sm">
+             Only 2 website/Design Spots Available this Month
           </span>
         </div>
 
-        <h1 className="text-5xl md:text-6xl font-bold mb-4 leading-tight">
-          From Zero to a High-Impact Website, Designed to Convert in Just <span className="text-cyan-400">7 days</span>
+        <h1 className="text-5xl md:text-6xl font-bold mb-10 mx-24 ">
+          High-Impact Web Design for SaaS That Converts, Not Just Looks Good
         </h1>
 
-        <p className="text-lg md:text-lg mb-8 text-neutral-300 max-w-3xl mx-auto">
-          For just <strong className="text-cyan-400">$175/month</strong> (special offer), I include domain + hosting + mobile design + basic monthly updates + a $1500 Figma redesign for free after 6 months + SSL.
-        </p>
-
-        <Link
-          href="/Booking_Free_Call"
-className="
-    relative inline-block 
-    bg-gradient-to-r from-blue-600 to-blue-400 
-    text-white font-bold py-4 px-8 rounded-full 
-    transition-all duration-300 
-    shadow-lg shadow-cyan-500/20 
-    hover:from-blue-600 hover:to-blue-500 
-    hover:shadow-xl 
-    hover:scale-105 hover:-translate-y-1
-    cursor-pointer hover:cursor-grab
-    z-10
-  "        >
-          Let&apos;s Start Your Project Together
+        <Link href="/Booking_Free_Call" className="relative bg-gray-200 hover:bg-white cursor-pointer text-black px-6 py-2.5 rounded-full font-bold">
+          <span >Book an Intro Call</span>
         </Link>
       </div>
 
@@ -63,14 +46,14 @@ className="
             name: "Sarah W.",
           }
         ].map((testimonial, index) => (
-          <div key={index} className="bg-gray-900/50 backdrop-blur-sm p-6 rounded-xl border border-gray-800">
-            <div className="flex justify-center gap-1 mb-2 text-cyan-400">
+          <div key={index} className="bg-black/50 backdrop-blur-sm p-6 rounded-xl border border-gray-800">
+            <div className="flex justify-center gap-1 mb-2 text-gray-50">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-4 h-4 fill-cyan-400" />
+                <Star key={i} className="w-4 h-4 fill-gray-50" />
               ))}
             </div>
-            <p className="italic">“{testimonial.quote}”</p>
-            <p className="mt-3 text-white font-semibold">- {testimonial.name}</p>
+            <p className="italic text-gray-500">“{testimonial.quote}”</p>
+            <p className="mt-3 text-gray-500 font-semibold">- {testimonial.name}</p>
           </div>
         ))}
       </div>
